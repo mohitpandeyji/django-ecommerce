@@ -1,0 +1,18 @@
+{% extends "emails/email_components/base-email.html" %}
+
+{% block title %}New User{% endblock title %}
+
+{% block body %}
+    <!-- Title -->
+    <h1>Welcome to Ecommerce! 🎉</h1>
+    <!-- Email body text -->
+    <p style="font-size: 18px; Margin-bottom: 30px;"><br>Admin has given you
+        access to your user.<br><br>You need to complete your registration and create username and password to log in.
+        You can easily do this by clicking the button below.
+    </p>
+    <br>
+    <!-- Red button -->
+    {% include 'emails/email_components/centered-red-button.html' with url=url button_text="Complete your registration" %}
+{% endblock body %}
+
+<!-- Default footer is used -->

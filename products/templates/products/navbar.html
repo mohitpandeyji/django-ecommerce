@@ -43,7 +43,7 @@
       </li>
       {% else %}
        <li class="nav-item">
-        <a  class="btn btn-primary" href="{% url 'users:create_basic_user' %}">Login / Register</a>
+        <a  class="btn btn-primary" href="{% url 'users:token_obtain_pair' %}">Login / Register</a>
       </li>
       {% endif %}
     </ul>
